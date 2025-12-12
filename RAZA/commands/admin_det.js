@@ -5,7 +5,7 @@ module.exports.config = {
   name: "admin2",
   version: "1.0.1",
   hasPermssion: 0,
-  credits: "Kashif Raza", 
+  credits: "Shaan Khan", 
   description: "hihihihi",
   commandCategory: "no prefix",
   usages: "admin",
@@ -18,7 +18,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
     var msg = {
         body: "🫅 𝐎𝐖𝐍𝐄𝐑 𝐏𝐑𝐎𝐅𝐈𝐋𝐄 🫅",
         attachment: 
-fs.createReadStream(__dirname + `/noprefix/kashif.png`)
+fs.createReadStream(__dirname + `/noprefix/IMG_20250608_082927.jpg`)
       }
       api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🫅", event.messageID, (err) => {}, true)
